@@ -23,3 +23,13 @@ def move_marble(pitch, roll, x, y):
   new_y = y
   if 1 < pitch < 179:
     new_x -= 1
+
+while game.over == False:
+    o = sense.get_orientation()
+    pitch = o["pitch"]
+    roll = 0["roll"]
+    x,y = move_marble(pitch,roll,x,y,)
+    maze[x][y] = w
+    sense.set_pixels(sum(maze,[]))
+    
+                    
