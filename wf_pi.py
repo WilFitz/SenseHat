@@ -15,21 +15,21 @@ maze = [[r,r,r,r,r,r,r,r],
 
 game_over = False
 
-marble = w
-maze[1][1] = marble
-sense.set_pixels(sum(maze,[]))
-def move_marble(pitch, roll, x, y):
-  new_x = x
-  new_y = y
-  if 1 < pitch < 179:
-    new_x -= 1
+def move_marble(pitch,roll, x, y):
+    new_x = x
+    new_y = y
+    if 1 < pitch < 179:
+        new_x -= 1
+    if 181 < pitch < 359:
+        new_x += 1
+    return new_x, new_y
 
-while game.over == False:
+while game_over == False:
     o = sense.get_orientation()
     pitch = o["pitch"]
-    roll = 0["roll"]
-    x,y = move_marble(pitch,roll,x,y,)
-    maze[x][y] = w
+    roll = o["roll"]
+    x,y = move_marble(pitch,roll,x,y)
+    maze[y][x] = w
     sense.set_pixels(sum(maze,[]))
-    
+
                     
