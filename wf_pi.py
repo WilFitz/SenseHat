@@ -8,13 +8,14 @@ r = (255,0,0)
 g = (0,255,0)
 b = (0,0,0)
 w = (255,255,255)
+bl = (0,100,100)
 
 x = 1
 y = 1
 
 maze = [[r,r,r,r,r,r,r,r],
         [r,b,r,b,b,b,b,r],
-        [r,b,r,b,r,b,b,r],
+        [r,b,r,b,r,r,bl,r],
         [r,b,r,b,r,r,r,r],
         [r,b,r,b,b,b,b,r],
         [r,b,r,r,r,r,b,r],
