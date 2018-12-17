@@ -4,10 +4,10 @@ from time import sleep
 sense = SenseHat()
 sense.clear()
 
-r = (255,0,0)
+r = (255,0,255)
 g = (0,255,0)
 b = (0,0,0)
-w = (255,255,255)
+w = (0,0,255)
 bl = (0,100,100)
 
 x = 1
